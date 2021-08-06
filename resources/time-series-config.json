@@ -1,0 +1,42 @@
+[
+  {
+    "type": "timeseries",
+    "renderAt": "chart-container",
+    "width": "100%",
+    "height": "100%",
+    "creditLabel": false,
+    "dataSource": {
+      "data": {
+        "schema": [
+          {
+            "name": "Time",
+            "type": "date",
+            "format": "%d-%b-%y"
+          },
+          {
+            "name": "Grocery Sales Value",
+            "type": "number"
+          }
+        ],
+        "data":"https://s3.eu-central-1.amazonaws.com/fusion.store/ft/data/line-chart-with-time-axis-data.json"
+      },
+      "caption": {
+        "text": "Sales Analysis"
+      },
+      "subCaption": {
+        "text": "Grocery"
+      },
+      "yAxis": [
+        {
+          "plot": {
+            "value": "Grocery Sales Value"
+          },
+          "format": {
+            "prefix": "$"
+          },
+          "title": "Sale Value"
+        }
+      ]
+    }
+  }
+]
